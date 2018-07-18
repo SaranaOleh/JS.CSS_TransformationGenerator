@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Start</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="node_modules/rxjs/bundles/Rx.min.js"></script>
+	</head>
+	<body>
+        <div class="transform_block">
+            <div class="preview">
+                <div class="block"></div>
+            </div>
+            <ul class="control">
+                <li>
+                    <label for="width">Width</label>
+                    <input type="number" id="width" value="50">
+                </li>
+                <li>
+                    <label for="height">Height</label>
+                    <input type="number" id="height" value="50">
+                </li>
+                <li>
+                    <label for="rotateX">RotateX</label>
+                    <input type="checkbox" id="rotateX" data-type="active">
+                    <input type="range" min="-180" max="180" value="0" step="1" data-transform="rotateX" data-units="deg" data-type="value">
+                </li>
+                <li>
+                    <label for="rotateY">RotateY</label>
+                    <input type="checkbox" id="rotateY" data-type="active">
+                    <input type="range" min="-180" max="180" value="0" step="1" data-transform="rotateY" data-units="deg" data-type="value">
+                </li>
+                <li>
+                    <label for="RotateZ">RotateZ</label>
+                    <input type="checkbox" id="RotateZ" data-type="active">
+                    <input type="range" min="-180" max="180" value="0" step="1" data-transform="rotateZ" data-units="deg" data-type="value">
+                </li>
+                <li>
+                    <label for="scale">Scale</label>
+                    <input type="checkbox" id="scale" data-type="active">
+                    <input type="range" min="0" max="2" value="1" step="0.1" data-transform="scale" data-units="" data-type="value">
+                </li>
+                <li>
+                    <label for="translateX">TranslateX</label>
+                    <input type="checkbox" id="translateX" data-type="active">
+                    <input type="range" min="-100" max="100" value="0" step="1" data-transform="translateX" data-units="%" data-type="value">
+                </li>
+                <li>
+                    <label for="translateY">TranslateY</label>
+                    <input type="checkbox" id="translateY" data-type="active">
+                    <input type="range" min="-100" max="100" value="0" step="1" data-transform="translateY" data-units="%" data-type="value">
+                </li>
+                <li>
+                    <label for="skewX">SkewX</label>
+                    <input type="checkbox" id="skewX" data-type="active">
+                    <input type="range" min="-45" max="45" value="0" step="1" data-transform="skewX" data-units="deg" data-type="value">
+                </li>
+                <li>
+                    <label for="skewY">SkewY</label>
+                    <input type="checkbox" id="skewY" data-type="active">
+                    <input type="range" min="-45" max="45" value="0" step="1" data-transform="skewY" data-units="deg" data-type="value">
+                </li>
+            </ul>
+            <ul class="results">
+                <li>.block {<span class="resultSize"></span><span class="resultTransform"></span>}</li>
+            </ul>
+        </div>
+	    <script src="js/script.js"></script>
+	</body>
+</html>
